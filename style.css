@@ -1,0 +1,216 @@
+html
+{
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 62.5%;
+}
+a
+{
+    text-decoration: none;
+    cursor: pointer; /* coloca una manita cuando pasamos el cursosr por esas etiquetas */
+}
+p
+{
+    font-size: 1.3rem;
+}
+button
+{
+    font-size: 1.4rem;
+}
+.nav-bar
+{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    list-style: none;
+    font-size: 1.3rem;
+    margin-top: 10px;
+}
+.nav-bar li
+{
+    margin-right: 15px; 
+}
+.nav-bar li a
+{
+    color: black;
+}
+.nav-bar__gapps-list
+{
+    height: 15px;
+    width: 15px;
+}
+.nav-bar__gapps-list img
+{
+    height: 15px;
+    width: 15px;
+}
+.nav-bar__session-button button
+{
+    width: 100px;
+    height: 25px;
+    background-color: #4387fd;
+    border: 1px solid #4285f4;
+    border-radius: 2px;
+    outline: none;
+    border: none;
+}
+.nav-bar__session-button button a
+{
+    color: white;
+}
+main
+{
+    width: 50%;
+    height: 430px;
+    margin:0 auto;
+    padding-top: 109px;
+    /* background-color: blue; */
+}
+main .google-giant-logo
+{
+    width: 40%;
+    margin: 0 auto;
+}
+main .google-giant-logo img
+{
+    width: 100%;
+    vertical-align: top;
+}
+main .search-bar
+{
+    width: 80%;
+    height: 35px;
+    margin: 0 auto;
+    margin-top: 15px;
+    border: 1px solid #dfe1e5;
+    background-color: white;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
+}
+main .search-bar:hover /* hover par la caja del input */
+{
+    box-shadow: 0 1px 6px 0 rgba(32,33,36,.28);
+}
+.search-bar__icon-glass
+{
+    height: 15px;
+    width: 15px;
+    background-image: url("./assets/icons/search-black.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-left: 15px;
+    opacity: 0.4; /* trucazo para que se vea ms opacoel icono como el de google */
+}
+.search-bar input
+{
+    width: 82%;
+    height: 30px;
+    border:none; /* border y outline eliminan el borde antes y despues de dar click al input */
+    outline: none;/* son geniales */
+}
+.search-bar .search-bar__icon-voice
+{
+    height: 15px;
+    width: 15px;
+    background-image: url("./assets/icons/google-mic-logo.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-right: 15px;
+}
+.search-options-google
+{
+    width: 100%;
+    text-align: center; 
+}
+.search-options-google .search-google-button
+{
+    display: inline-block;
+    margin-right: 10px;  
+}
+.search-options-google button
+{   
+    margin-top: 25px;
+    height: 36px;
+    width: 154px;
+    outline: none;
+    border: none;
+    background-color: #f8f9fa;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.search-options-google button:hover
+{   
+    border: 1px solid #c6c6c6;
+    box-shadow: 0px 1px 1px rgba(0,0,0,0.1);
+    color: #222;
+    background-color: #f8f8f8;
+}
+.search-options-google .lucky-google-button
+{
+    display: inline-block;
+}
+.offer-by-google
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 20px;
+    margin-top: 20px;
+}
+footer
+{
+    width: 100%;
+    position: absolute; /* Truco: para hacer que el footer siempre se mantenga abajo */
+    bottom:0; /* truco para hacer que el footer siempre se mantenga el final */
+    display:flex;
+    flex-direction: column;
+    background-color: #f2f2f2;;
+    color:rgba(0,0,0,.54); /* color de las letras */
+    font-size: 1.1rem;
+}
+footer a
+{
+    font-size: 1.5rem;
+}
+footer .location
+{
+    display: flex;
+    align-items: center;
+    height: 35px;
+    padding-left: 20px;
+    border: 1px solid #dfe1e5;
+}
+footer .about-us-and-disclaimers
+{
+    display: flex;
+    align-items: center;
+    height: 35px;
+    padding-left: 20px;
+    padding-right: 20px;
+    justify-content: space-between;
+    border: 1px solid #dfe1e5;
+}
+footer a
+{
+    color: #70757a;
+}
+.about-us-and-disclaimers .about-us
+{
+    display: flex;  
+}
+.about-us-and-disclaimers .about-us a
+{
+    padding-right: 15px;
+}
+.about-us-and-disclaimers .disclaimers
+{
+    display: flex;
+}
+.about-us-and-disclaimers .disclaimers a
+{
+    padding-left: 15px;
+}
